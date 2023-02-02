@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira+Semi+Condensed:wght@300&display=swap');
+/*
+font-family: 'Caveat', cursive;
+font-family: 'Saira Semi Condensed', sans-serif;
+*/
+/* ------------------------------------------------- Body */
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: rgb(207 221 234);
+}
+
+/* ------------------------------------------------- Logo & menu */
+#mainNav .navbar-brand {
+    color: rgb(133,58,90);
+    font-family: 'Caveat', cursive;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(133,58,90);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: .5rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(133,58,90);
+}
+
+/* Setting background-img for navbar */
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+      background-image: url(../images/b-img1.png);
+      background-size: cover;
+      border-bottom: 2px solid rgb(133,58,90);
+  }
+    #mainNav.navbar-shrink .navbar-brand {
+      color: rgb(207 221 234);
+  }
+}
+
+/* ------------------------------------------------- Hero Section */
+header.masthead {
+    background-image: url(../images/hero.jpeg);
+    color: transparent;
+}
+
+/* ------------------------------------------------- Hero Buttons */
+.btn-primary {
+    color: rgb(207 221 234);
+    background-color: rgba(17, 35, 45, 0.421);
+    border: 2px solid rgb(207 221 234);
+}
+
+.btn-primary:hover {
+    color: rgb(207 221 234);
+    background-color: rgba(17, 35, 45, 0.878);
+    border-color: rgb(207 221 234);
+    box-shadow: 0 0 20px 0 rgba(17, 35, 45);
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus {
+    color: rgb(207 221 234);
+    background-color: rgba(17, 35, 45);
+    border-color: rgb(207 221 234);
+    box-shadow: 0 0 20px 0 rgb(17, 35, 45);
+}
+
+.btn-primary:active {
+    color: rgb(207 221 234);
+    background-color: rgba(17, 35, 45);
+    border-color: rgba(17, 35, 45);
+}
+
+/* ------------------------------------------------- About Section */
+.fa-inverse {
+    color: rgb(133,58,90);
+}
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+mark {
+    background-color: rgba(133, 58, 91, 0.486);
+    color: rgb(207 221 234);
+}
+
+.about {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    border-bottom: 2px solid rgb(133,58,90);
+}
+
+.text-muted {
+    color: rgb(17,35,45);
+}
+
+h4 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* ------------------------------------------------- Contact Section */
+section#contact {
+    background-image: none;
+    background-color: rgb(207 221 234);
+}
+
+section#contact .section-heading {
+    color: rgb(17,35,45);
+    border-bottom: 2px solid rgb(133,58,90);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.btn-primary.disabled {
+    background-color: rgba(17, 35, 45, 0.488);
+    color: rgb(17, 35, 45);
+    border-color: rgb(17, 35, 45);
+}
+
+.btn-primary.disabled:hover {
+    background-color: rgb(17, 35, 45);
+}
+
+section#contact form#contactForm .form-group input.form-control {
+    background-color: rgba(17, 35, 45, 0.488);
+    color: rgb(207 221 234);
+}
+
+section#contact form#contactForm .form-group-textarea textarea {
+    background-color: rgba(17, 35, 45, 0.488);
+    color: rgb(207 221 234);
+}
+
+section#contact form#contactForm .form-control:focus {
+    border-color: rgb(17, 35, 45);
+}
+
+/* Changing input autofill to be transparent */
+input:-webkit-autofill, input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* ------------------------------------------------- Footer */
+footer {
+    background-image: url(../images/b-img1.png);
+    background-size: cover;
+}
+
+a {
+    color: rgb(207 221 234);
+    font-size: 2rem;
+}
+
+a:hover {
+    color: rgb(17, 35, 45);
+}
+
+.box {
+    border-left: 2px solid rgb(207 221 234);
+    border-right: 2px solid rgb(207 221 234);
+    color: rgb(207 221 234);
+}
+
+.bg-color {
+    background-color: rgba(17, 35, 45, 0.488);
+}
+
+#carousel-size {
+    width: 65%;
+}
+
+.dropdown-toggle:hover {
+    color: rgb(133,58,90);
+}
+
+.dropdown-menu {
+    background-color: rgba(17, 35, 45, 0.488);
+    border: 2px solid rgba(17, 35, 45)
+}
+
+.dropdown-item {
+    color: rgb(207 221 234);
+    font-size: 1rem;
+    letter-spacing: .3rem;
+}
+
+.dropdown-item:hover {
+    color: rgb(133,58,90);
+    background-color: transparent;
+}

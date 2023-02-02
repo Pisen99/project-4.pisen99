@@ -1,4 +1,4 @@
-from . import views
+from django.contrib import admin
 from django.urls import path
 from .views import index_view, register_view
 
