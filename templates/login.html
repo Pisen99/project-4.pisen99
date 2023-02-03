@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row justify-content-center no-gutters">
+    <div class="col-sm-12 col-md-6">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">Login</h2>
+            <h3 class="section-subheading text-muted">
+                If you haven't created an account yet, please <a href="{% url 'register' %}">register</a> first.
+            </h3>
+        </div>
+        <form>
+            <div class="text-center mb-5">
+                <div class="form-group">
+                    <!-- Email address input-->
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" />
+                </div>
+                <div class="form-group">
+                    <!-- Phone number input-->
+                    <input class="form-control" id="password" type="password" placeholder="Your Password *" />
+                </div>
+                <div class="form-group">
+                    <!-- Remember me input-->
+                    <input type="checkbox" id="remember_me" name="remember_me" value="remember_me">
+                    <label for="remember_me">Remember Me</label>
+                </div>
+            </div>
+            <!-- Submit Button-->
+            <div class="section-subheading text-center" >
+                <h3 class="text-muted">I forgot my <a href="{% url 'resetpassword' %}">password</a></h3>
+            </div>
+            <!-- Submit Button-->
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Log
+                    in</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
