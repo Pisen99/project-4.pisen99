@@ -26,3 +26,12 @@ def contact_view(request):
 
     return render(request, 'contact.html')
 
+
+def reservations_view(request):
+
+    return render(request, 'reservations.html')
+
+
+def menu_view(request):
+
+    return render(request, 'menu.html')

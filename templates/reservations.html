@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Make A Reservation</h2>
+                <h3 class="section-subheading text-muted">
+                    All tables in our fine-dinging are reserved no later than 8PM the day before.
+                    <br>
+                    The pub hovewer is always open for drop-ins
+                </h3>
+            </div>
+            <div class="text-center">
+                <div class="row align-items-stretch mb-5">
+                    <!-- FullName -->
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                        data-sb-validations="required"/>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                            data-sb-validations="required,email" />
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <!-- PhoneNumber -->
+                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                            data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                        </div>
+                    </div>
+                    <!-- No. People -->
+                    <div class="form-group">
+                        <div class="invalid-feedback" data-sb-feedback="name:required">No Of Guests</div>
+                            <select class="form-control" name="Guests" id="Guests" data-sb-validations="required">
+                                <option value="0">No. People *</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                            </select>
+                    </div>
+                    <!-- Date -->
+                    <div class="form-group">
+                        <input class="form-control" type="date" id="start" name="trip-start" value="Date for Reservation" min="today" max="2024-01-01" data-sb-validations="required">
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Time -->
+                    <div class="form-group">
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Date of reservation</div>
+                            <select class="form-control" name="Guests" id="Guests" data-sb-validations="required">
+                                <option value="0">Date of reservation *</option>
+                                <option value="1">5PM</option>
+                                <option value="2">5:30PM</option>
+                                <option value="3">6PM</option>
+                                <option value="4">6:30PM</option>
+                                <option value="5">7PM</option>
+                                <option value="6">7:30PM</option>
+                                <option value="6">8PM</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Anything we should know? *"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
